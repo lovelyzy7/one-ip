@@ -14,6 +14,8 @@ function render(primary, split, client = {}, capture = () => {}) {
     if (name === "react") return { useEffect() {}, useState: () => [false, () => {}] };
     if (name === "@/i18n") return { t: (text) => text };
     if (name === "@/hooks/use-mobile") return { useIsMobile: () => false };
+    if (name === "@/hooks/use-available-tools") return { useAvailableTools: () => [] };
+    if (name === "@/layout/routes") return { toolGroups: { network: [], ai: [] } };
     if (name === "@/hooks/use-sort-animation") return { useSortAnimation: () => null };
     if (name === "@/components/connectivity") return { homeTargets: [] };
     if (name === "./sites.json") return [{ name: "Example" }];
