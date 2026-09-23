@@ -91,6 +91,17 @@ IP addresses, detailed locations and ISP / ASN information have been redacted. V
   </tr>
 </table>
 
+## Business Cooperation
+
+One IP offers a closed-source commercial edition and related services for organizations that need network and browser environment checks, AI service connectivity diagnostics, batch acceptance testing or continuous monitoring. Cooperation can cover:
+
+- Commercial licenses and team workflows
+- Private deployment and data isolation
+- Custom development, integrations and API access
+- Technical consulting, deployment and ongoing support
+
+To discuss the commercial edition, private deployment or a custom solution, email [ip@huzhihui.com](mailto:ip@huzhihui.com) with your use case, deployment model and expected scale. See the [GitHub repository](https://github.com/zhihui-hu/one-ip) for project details. The final service scope, data permissions and delivery terms are subject to agreement.
+
 ## Update your fork
 
 Click **Sync fork → Update branch** on your GitHub repository page. Review differences if you have code changes, and resolve merge conflicts.
@@ -166,6 +177,8 @@ The script uploads non-empty values, preserves existing secrets and skips missin
 reCAPTCHA uses v3 score-based keys. The backend validates hostname, the `browser_check` action and score, with a passing threshold of 0.5. The v2 checkbox and Enterprise assessment API are unsupported. Production rejects localhost.
 
 ## Structure and data sources
+
+Data sources differ by edition: the open-source edition uses publicly accessible data on the internet and public third-party APIs; the closed-source commercial edition supports private deployment and uses data from the private deployment environment. The specific data scope, retention and usage rights are subject to the commercial plan and contract.
 
 - `src/app.css`: interface styles; `src/components/ui`: shadcn/ui components.
 - `src/views`: network, browser, AI and status pages; `public/worker`: Worker APIs.
